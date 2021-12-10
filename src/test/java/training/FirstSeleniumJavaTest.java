@@ -30,18 +30,6 @@ public class FirstSeleniumJavaTest {
 		AssertJUnit.assertTrue(title.equals("Test Automation University | Applitools"));
 	}	
 
-	@Test				
-	public void testTwo() {	
-
-		driver.get("https://www.google.co.uk/"); 
-		driver.manage().window().maximize();
-
-		String title1 = driver.getTitle();
-		System.out.println("title is "+title1);
-		AssertJUnit.assertTrue(title1.equals("Google"));
-
-	}	
-
 	@BeforeTest
 	public void beforeTest() {	
 	    driver = new ChromeDriver();  
